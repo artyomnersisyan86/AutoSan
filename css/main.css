@@ -1,0 +1,38 @@
+@import url("_normalizee.css");
+@import url("_vars.css");
+@import url("_settings.css");
+
+/*bloks*/
+
+@import url("blocks/_btn.css");
+@import url("blocks/_title.css");
+
+@import url("blocks/_footer.css");
+
+@import url("blocks/_logo.css");
+
+@import url("blocks/_header.css");
+@import url("blocks/_navigation.css");
+
+@import url("blocks/_media.css");
+@import url("blocks/_form.css");
+@import url("blocks/_select.css");
+@import url("blocks/_swiper-slider.css");
+@import url("blocks/_select-car-section.css");
+
+
+/*@import url("blocks/_burger_menu.css");*/
+/*@import url("blocks/social.css");*/
+/*@import url("blocks/_title.css");*/
+/*@import url("blocks/_image.css");*/
+/*@import url("blocks/_grid.css");*/
+/*@import url("blocks/_paginations.css");*/
+/*@import url("blocks/_section.css");*/
+/*@import url("blocks/_dropdown.css");*/
+/*@import url("blocks/_slider.css");*/
+/*@import url("blocks/__card.css");*/
+/*@import url("blocks/_news.css");*/
+/*@import url("blocks/_select-car-section.css");*/
+/*@import url("blocks/_partners.css");*/
+/*@import url("blocks/_news_details.css");*/
+

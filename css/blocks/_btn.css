@@ -1,0 +1,121 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: 0 calc(var(--spacing-md));
+    border: none;
+    border-radius: var(--radius-xl);
+    font-size: var(--font-md);
+    font-weight: 500;
+    height: var(--input-button-height);
+    cursor: pointer;
+    transition: var(--transition-slow);
+}
+
+
+
+.btn-primary {
+    background-color: var(--color-primary-blue);
+    color: var(--color-primary-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-black);
+}
+
+
+.btn-outline {
+    border: var(--border);
+    color: var(--color-grey-bedge);
+    border-radius: var(--radius-lg);
+}
+
+.btn-outline:hover {
+    opacity: 0.7;
+}
+
+.btn-text {
+    background-color: transparent;
+    height: auto;
+    color: var(--color-grey-bedge);
+}
+
+.btn-text:hover {
+    opacity: 0.7;
+}
+
+.btn-icon {
+    /*padding: var(--spacing-xs);*/
+}
+
+.btn-icon img {
+    height: 20px;
+    width: 20px;
+}
+
+
+.btn-with-icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+}
+
+.btn-with-icons .icon-left,
+.btn-with-icons .icon-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color var(--transition-fast);
+}
+
+/*.btn-with-icons:hover .icon-left,*/
+/*.btn-with-icons:hover .icon-right {*/
+/*    color: var(--color-primary-blue); !* Цвет иконки при наведении *!*/
+/*}*/
+
+/* Эти стили для img больше не нужны, если SVG встроены */
+/*.btn-with-icons .icon-left img,*/
+/*.btn-with-icons .icon-right img {*/
+/*    display: none;*/
+/*}*/
+
+/*.btn-with-icons:hover .icon-left,*/
+/*.btn-with-icons:hover .icon-right {*/
+/*    filter: var(--color-primary-white);*/
+/*}*/
+
+/*.btn-with-icons:hover .icon-left,*/
+/*.btn-with-icons:hover .icon-right {*/
+/*    filter: var(--color-primary-white);*/
+/*}*/
+
+
+.badge-button {
+    position: relative;
+    font-size: var(--font-xs);
+}
+
+
+
+
+.badge-button:before {
+    content: attr(data-count);
+    /*width: 30px;*/
+    /*height: 18px;*/
+    padding: 0 6px;
+    text-align: center;
+    display: block;
+    border-radius: 6px;
+    background: var(--color-yellow);
+    border: none;
+    box-shadow: var(--shadow-md);
+    color: var(--color-primary-black);
+    position: absolute;
+    font-weight: 500;
+    /*left: auto;*/
+    right: -15px;
+    top: -6px;
+}
+

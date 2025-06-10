@@ -1,0 +1,343 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+}
+
+
+body {
+    font-family: var(--font-family-base), sans-serif;
+    background-color: var(--color-bg-body);
+    color: var(--color-grey-bedge);
+    line-height: 1.6;
+    font-size: var(--font-md);
+    font-weight: 400;
+}
+
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--color-primary-black);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/*-----------------------------------------*/
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-header h2 {
+    font-size: var(--font-xl);
+    font-weight: 600;
+}
+
+.view-all {
+    color: var(--color-light-blue);
+    font-weight: 500;
+}
+
+/* Кнопки */
+
+
+/* Обновленные стили для шапки */
+
+/* Стили для основной навигации */
+
+
+/* Герой-секция */
+.hero {
+    display: flex;
+    background-color: var(--color-primary-blue);
+    color: var(--color-primary-white);
+    padding: var(--spacing-xxxl) 5%;
+    gap: var(--spacing-xxl);
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: var(--font-xxxl);
+    margin-bottom: var(--spacing-lg);
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: var(--font-lg);
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.9;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Популярные категории */
+.popular-categories {
+    padding: var(--spacing-xxxl) 5%;
+    background-color: var(--color-bg-white);
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xl);
+}
+
+.category-item {
+    background-color: var(--color-grey-card);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    text-align: center;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.category-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-lg);
+    background-color: #e6f0ff;
+    border-radius: var(--radius-circle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.category-item h3 {
+    margin-bottom: var(--spacing-md);
+    font-weight: 600;
+}
+
+/* Топ бренды */
+.top-brands {
+    padding: 60px 5%;
+    background-color: #f5f5f5;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.brand-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.brand-item:hover {
+    transform: scale(1.05);
+}
+
+/* Рекомендуемые товары */
+.featured-products {
+    padding: 60px 5%;
+    background-color: white;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+/* Промо-баннер */
+.promo-banner {
+    background-color: #0056b3;
+    color: white;
+    padding: 60px 5%;
+    text-align: center;
+    margin: 60px 0;
+}
+
+.promo-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.promo-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Последние новости */
+.latest-news {
+    padding: 60px 5%;
+    background-color: #f5f5f5;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.news-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-card h3 {
+    padding: 20px 20px 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.news-card p {
+    padding: 0 20px 20px;
+    color: #666;
+}
+
+.read-more {
+    display: block;
+    padding: 0 20px 20px;
+    color: #0056b3;
+    font-weight: 500;
+}
+
+/* Слайдер брендов */
+.brands-slider {
+    padding: 40px 5%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.brands-container {
+    display: flex;
+    gap: 40px;
+    animation: slide 20s linear infinite;
+}
+
+.brand-logo {
+    flex: 0 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

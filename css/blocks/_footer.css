@@ -1,0 +1,90 @@
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: var(--border);
+    color: #ccc;
+    font-size: 14px;
+}
+
+
+/* Подвал */
+footer {
+    background-color:var(--color-dark-black);
+    color: white;
+    padding: 60px 5% 30px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 80px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+.app-download{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.app-download .btn-primary{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+ width: 100%;
+    max-width: max-content;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    height: 60px;
+    background: rgba(247, 247, 247, 0.08);
+    border-radius: 16px;
+}
+.app-download .btn-primary:hover{
+    opacity: 0.8;
+}
+.app-name-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.app-title{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+}

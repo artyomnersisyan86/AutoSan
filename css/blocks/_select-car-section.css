@@ -1,0 +1,167 @@
+.select-car {
+    margin: 0 var(--spacing-xxxxl) 120px;
+}
+
+.car-selection-card {
+    background: var(--color-primary-white);
+    border: 2px solid #F3F4F6;
+    border-radius: var(--font-md);
+    padding: var(--font-xxl);
+    /*max-width: 1282px;*/
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--font-xxl);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/*.title {*/
+/*    font-weight: 700;*/
+/*    font-size: 36px;*/
+/*    line-height: 42px;*/
+/*    text-align: center;*/
+/*    color: #202020;*/
+/*    width: 100%;*/
+/*}*/
+
+.filters-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.filter-select {
+    position: relative;
+    width: 185px;
+    height: var(--input-button-height);
+    flex-shrink: 0;
+}
+
+.select-button {
+    width: 100%;
+    height: 100%;
+    background: var(--color-primary-white);
+    border: var(--border);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--color-primary-black);
+}
+
+.select-button:hover {
+    border-color: rgba(0, 45, 202, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 45, 202, 0.1);
+}
+
+.select-button.active {
+    border-color: #4077EC;
+    border-width: 2px;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-right: 1.5px solid #202020;
+    border-bottom: 1.5px solid #202020;
+}
+
+.select-button.active .arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #FFFDFD;
+    border:var(--border);
+    border-radius: 8px;
+    margin-top: 4px;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown.show {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+    font-size: var(--font-md);
+    color: var(--color-primary-black);
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-grey-card);
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 1024px) {
+    .filters-container {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .filter-select {
+        width: 180px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .car-selection-card {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .filters-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-select {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}

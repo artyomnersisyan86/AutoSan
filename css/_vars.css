@@ -1,0 +1,64 @@
+:root {
+
+    /* main colors */
+    --color-primary-blue: #002DCA;
+    --color-light-blue: #4D73F7;
+    --color-primary-black: #202020;
+    --color-dark-black: #050B20;
+    --color-bg-white: #F6F6F6;
+    --color-primary-white: #FFFDFD;
+    --color-grey-bedge: #5D5D5D;
+    --color-grey-text: #999;
+    --color-grey-card: #f5f5f5;
+    --color-yellow: #f8a100;
+    --input-button-height: 48px;
+    --color-bg-body: #E0E0E0;
+    --color-blue-15op: rgba(0, 45, 202, 0.15);
+    --color-blue-6op: rgba(0, 45, 202, 0.06);
+    --color-disabled: #D3D3D3;
+    --border: 1.5px solid var(--color-blue-15op);
+
+
+    /* font */
+    --font-family-base: 'Mardoto', sans-serif;
+
+
+    /* borders and  и shadows */
+    --border-color: #eee;
+    --border-color-dark: #ddd;
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+
+    /* font-size */
+    --font-xs: 12px;
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 24px;
+    --font-xxl: 32px;
+    --font-xxxl: 42px;
+
+    /* Отступы */
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+    --spacing-xl: 30px;
+    --spacing-xxl: 40px;
+    --spacing-xxxl: 60px;
+    --spacing-xxxxl: 80px;
+
+    /* radius */
+    --radius-sm: 2px;
+    --radius-md: 4px;
+    --radius-lg: 10px;
+    --radius-xl: 48px;
+    --radius-circle: 50%;
+
+    /* transition */
+    --transition-fast: 0.2s;
+    --transition-normal: 0.3s;
+    --transition-slow: 0.5s;
+}

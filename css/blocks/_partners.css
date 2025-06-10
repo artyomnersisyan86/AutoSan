@@ -1,0 +1,29 @@
+.partners {
+    margin-top: 34px;
+}
+
+.partners__content {
+    margin-top: 40px;
+    /*max-height: 60px;*/
+}
+
+
+.partners__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 81px;
+
+}
+
+.partners__item {
+
+}
+
+.partners_img {
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(319deg) brightness(106%) contrast(100%);
+}
+
+.partners_img:hover {
+    filter: none;
+}

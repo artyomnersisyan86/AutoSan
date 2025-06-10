@@ -1,0 +1,113 @@
+.header {
+    background-color: var(--color-bg-white);
+    box-shadow: 0px 4px 18px rgba(147, 147, 147, 0.07);
+    padding: var(--spacing-md) var(--spacing-xxxxl);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /*gap: 0;*/
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+.header-left-right {
+    display: flex;
+    align-items: center;
+}
+
+
+.divider{
+    width: 48px;
+    height: 0;
+    border: var(--border);
+    transform: rotate(-90deg);
+}
+
+
+
+
+.phone-numbers {
+    display: grid;
+    align-items: center;
+    /*gap: var(--spacing-md);*/
+    /*justify-content: center;*/
+}
+.phone-numbers svg{
+    color: var(--color-primary-blue);
+}
+
+
+
+.header-right .search-input-wrapper svg{
+    color: var(--color-primary-black);
+}
+
+.search-box {
+    display: flex;
+    border: 1px solid var(--border-color-dark);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    /*width: 250px;*/
+}
+
+.search-box input {
+    border: none;
+    padding: 20px;
+    flex-grow: 1;
+    outline: none;
+    height: var(--input-button-height);
+}
+
+.search-box button {
+    background: transparent;
+    border: none;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    cursor: pointer;
+    color: var(--color-grey-bedge);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing-md) + 3px);
+}
+
+.cart-icon, .wishlist-icon, .user-icon {
+    font-size: var(--font-lg);
+    color: var(--color-primary-blue);
+    transition: color var(--transition-normal);
+}
+
+.cart-icon:hover, .wishlist-icon:hover, .user-icon:hover {
+    color: var(--color-light-blue);
+}
+
+.cart-counter {
+    background-color: var(--color-yellow);
+    color: var(--color-primary-white);
+    font-size: var(--font-xs);
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    cursor: pointer;
+}
+
+.language-selector img {
+    width: 20px;
+    height: 15px;
+    border-radius: var(--radius-sm);
+}
+
