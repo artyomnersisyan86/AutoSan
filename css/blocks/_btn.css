@@ -39,6 +39,7 @@
     background-color: transparent;
     height: auto;
     color: var(--color-grey-bedge);
+    min-width: max-content;
 }
 
 .btn-text:hover {

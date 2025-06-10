@@ -3,7 +3,7 @@
 @import url("_settings.css");
 
 /*bloks*/
-
+@import url("blocks/_section.css");
 @import url("blocks/_btn.css");
 @import url("blocks/_title.css");
 
@@ -19,6 +19,7 @@
 @import url("blocks/_select.css");
 @import url("blocks/_swiper-slider.css");
 @import url("blocks/_select-car-section.css");
+@import url("blocks/_top-products.css");
 
 
 /*@import url("blocks/_burger_menu.css");*/

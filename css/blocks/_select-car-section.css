@@ -1,20 +1,19 @@
-.select-car {
-    margin: 0 var(--spacing-xxxxl) 120px;
-}
+/*.select-car {*/
+/*    margin: 0 var(--spacing-xxxxl) 120px;*/
 
-.car-selection-card {
-    background: var(--color-primary-white);
-    border: 2px solid #F3F4F6;
-    border-radius: var(--font-md);
-    padding: var(--font-xxl);
-    /*max-width: 1282px;*/
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--font-xxl);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-}
+/*    background: var(--color-primary-white);*/
+/*    border:var(--border-section) ;*/
+/*    border-radius: var(--font-md);*/
+/*    padding: var(--font-xxl);*/
+/*    !*max-width: 1282px;*!*/
+/*    !*width: 100%;*!*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    gap: var(--font-xxl);*/
+/*    box-shadow: var(--shadow-section);*/
+/*}*/
+
 
 /*.title {*/
 /*    font-weight: 700;*/
@@ -24,6 +23,9 @@
 /*    color: #202020;*/
 /*    width: 100%;*/
 /*}*/
+.car-selection-card {
+    width: 100%;
+}
 
 .filters-container {
     display: flex;
@@ -98,7 +100,7 @@
     left: 0;
     right: 0;
     background: #FFFDFD;
-    border:var(--border);
+    border: var(--border);
     border-radius: 8px;
     margin-top: 4px;
     z-index: 10;
