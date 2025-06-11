@@ -120,3 +120,30 @@
     top: -6px;
 }
 
+/* Badge */
+.badge {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    max-width: max-content;
+    /*position: absolute;*/
+    /*left: 14px;*/
+    /*top: 14px;*/
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: var(--font-sm);
+    line-height: var(--font-md);
+    /*z-index: 2;*/
+}
+
+.badge.new {
+    background: var(--color-yellow);
+    color: #7C4D00;
+}
+
+.badge.discount {
+    background: #5D5D5D;
+    color: #FFFDFD;
+}

@@ -1,0 +1,24 @@
+.partners-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+
+}
+
+.partners-container a {
+    border: none;
+}
+
+.partners-container img {
+    width: 197px;
+    height: 145px;
+    border: none;
+}
+
+/*.partners-container a :hover{*/
+/*    border-radius: 10px;*/
+/*    box-shadow: var(--shadow-lg);*/
+/*}*/

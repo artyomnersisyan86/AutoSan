@@ -1,28 +1,4 @@
-/*.select-car {*/
-/*    margin: 0 var(--spacing-xxxxl) 120px;*/
 
-/*    background: var(--color-primary-white);*/
-/*    border:var(--border-section) ;*/
-/*    border-radius: var(--font-md);*/
-/*    padding: var(--font-xxl);*/
-/*    !*max-width: 1282px;*!*/
-/*    !*width: 100%;*!*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: center;*/
-/*    gap: var(--font-xxl);*/
-/*    box-shadow: var(--shadow-section);*/
-/*}*/
-
-
-/*.title {*/
-/*    font-weight: 700;*/
-/*    font-size: 36px;*/
-/*    line-height: 42px;*/
-/*    text-align: center;*/
-/*    color: #202020;*/
-/*    width: 100%;*/
-/*}*/
 .car-selection-card {
     width: 100%;
 }
