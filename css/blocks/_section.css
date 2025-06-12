@@ -46,10 +46,12 @@
     color: #202020;
     white-space: nowrap;
 }
-.section-container{
-display: flex;
+
+.section-container {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 24px;
+    width: 100%;
 
 }

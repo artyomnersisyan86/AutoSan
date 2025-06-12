@@ -10,11 +10,77 @@
     border-radius: 10px;
 }
 
+/*--------------------------*/
 .card-img {
     width: 95px;
     height: 95px;
 }
 
+.card.vertical {
+    max-width: 625px !important;
+    width: 100% !important;
+    /*gap: 24px*/
+    max-height: 556px;
+}
+
+.vertical.section-bg {
+    padding: 10px;
+}
+
+.card.horizontal {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+      max-width: max-content !important;
+
+min-height: 266px;
+
+}
+
+/*.horizontal img {*/
+/*    max-width: 206px;*/
+/*    max-height: 238px;*/
+/*    width: 100%;*/
+/*}*/
+.vertical img {
+    max-width: 589px;
+    max-height: 309px;
+    width: 100%;
+}
+
+
+.card-info {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card-info-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 20px 0;
+    cursor: pointer;
+    list-style: none;
+    transition: .3s;
+}
+
+.card-info-content {
+
+}
+
+.card-info-description {
+    font-weight: 400;
+    font-size: var(--font-md);
+    line-height: 19px;
+    /*display: flex;*/
+    align-items: center;
+    color: var(--color-grey-text);
+    margin-bottom: 32px;
+}
+
+/*------------------------*/
 
 @media (any-hover: hover) {
     .card:hover {

@@ -1,0 +1,122 @@
+.brand-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    /*max-width: 1302px;*/
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.brand-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    width: 197px;
+    height: 141.6px;
+    /*background: white;*/
+    filter: drop-shadow(0px 4px 27.3px rgba(180, 180, 180, 0.25));
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0px 8px 35px rgba(180, 180, 180, 0.35));
+}
+
+.brand-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100px;
+    height: 101.6px;
+}
+
+.brand-logo {
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.brand-logo.audi {
+    width: 98.55px;
+    background-color: transparent;
+}
+
+.brand-logo svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brand-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brand-name {
+    width: 100px;
+    height: 21.6px;
+    font-family: 'DM Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #202020;
+}
+
+@media (max-width: 768px) {
+    .brand-container {
+        gap: 16px;
+    }
+
+    .brand-card {
+        width: 160px;
+        height: 120px;
+        padding: 15px 8px;
+    }
+
+    .brand-content {
+        width: 80px;
+        height: 90px;
+        gap: 8px;
+    }
+
+    .brand-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .brand-logo.audi {
+        width: 70px;
+    }
+
+    .brand-name {
+        font-size: 14px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
