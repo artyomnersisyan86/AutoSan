@@ -5,7 +5,7 @@
     gap: var(--spacing-sm);
     padding: 0 calc(var(--spacing-md));
     border: none;
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-xxl);
     font-size: var(--font-md);
     font-weight: 500;
     height: var(--input-button-height);
@@ -44,6 +44,7 @@
 
 .btn-text:hover {
     opacity: 0.7;
+    color: var(--color-light-blue);
 }
 
 .btn-icon {

@@ -17,7 +17,7 @@
     --color-blue-6op: rgba(0, 45, 202, 0.06);
     --color-disabled: #D3D3D3;
     --color-section-border: #F3F4F6;
-    --border: 1.5px solid var(--color-blue-15op);
+    --border: 2px solid var(--color-blue-15op);
     --border-section: 2px solid var(--color-section-border);
 
 
@@ -32,7 +32,7 @@
     --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.05);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.3);
     --shadow-section: 0 4px 20px rgba(0, 0, 0, 0.05);
-
+    --card-shadow: 0 8px 25px rgba(0, 45, 202, 0.1);
 
     /* font-size */
     --font-xs: 12px;
@@ -57,11 +57,14 @@
     --radius-sm: 2px;
     --radius-md: 4px;
     --radius-lg: 10px;
-    --radius-xl: 48px;
+    --radius-xl: 20px;
+    --radius-xxl: 48px;
     --radius-circle: 50%;
 
     /* transition */
     --transition-fast: 0.2s;
     --transition-normal: 0.3s;
+    --transition-all: all 0.3s ease;
     --transition-slow: 0.5s;
+
 }
