@@ -11,7 +11,9 @@
 .partners-container a {
     border: none;
 }
+.partners-container a:hover{
 
+}
 .partners-container img {
     width: 197px;
     height: 145px;

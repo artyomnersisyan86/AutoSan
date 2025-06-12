@@ -18,7 +18,7 @@
     border: var(--border-section);
     border-radius: var(--font-md);
     padding: var(--font-xxl);
-    box-shadow: var(--shadow-section);
+    /*box-shadow: var(--shadow-section);*/
 }
 
 /* Header Section */
@@ -45,4 +45,11 @@
     text-align: center;
     color: #202020;
     white-space: nowrap;
+}
+.section-container{
+display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+
 }

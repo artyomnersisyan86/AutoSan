@@ -33,7 +33,6 @@
 /*}*/
 
 
-
 .title {
     font-weight: 700;
     font-size: 36px;
@@ -42,18 +41,29 @@
     color: var(--color-primary-black);
     width: 100%;
 }
+
 .small-title {
-   font-weight: 500;
+    font-weight: 500;
     font-size: var(--font-lg);
     line-height: 21px;
     color: var(--color-primary-black);
 }
+
+.title-md {
+    font-weight: 500;
+    font-size: var(--font-xl);
+    line-height: 28px;
+    color: var(--color-primary-black);
+}
+
 .description {
     font-weight: 400;
     font-size: var(--font-sm);
-    line-height: var( --font-md);
+    line-height: var(--font-md);
     color: var(--color-grey-bedge);
     text-align: left;
     /*padding: 0 14px;*/
 }
+.description-2{
 
+}
