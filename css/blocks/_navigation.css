@@ -44,3 +44,12 @@
     flex-grow: 0;
     z-index: 1;
 }
+@media (max-width: 1260px) {
+    .main-nav{
+        padding:var(--spacing-sm) var(--spacing-xxl);
+    }
+    .main-nav ul{
+       gap: 20px;
+        padding: 0 16px
+    }
+}

@@ -31,19 +31,19 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: var(--transition-all);
     font-family: inherit;
     font-size: 16px;
     color: var(--color-primary-black);
 }
 
 .select-button:hover {
-    border-color: rgba(0, 45, 202, 0.3);
-    box-shadow: 0 2px 8px rgba(0, 45, 202, 0.1);
+    border-color: var(--color-blue-15op);
+    box-shadow: var(--card-shadow);
 }
 
 .select-button.active {
-    border-color: #4077EC;
+    border-color: var(--color-light-blue);
     border-width: 2px;
 }
 
@@ -62,8 +62,8 @@
     transform: translate(-50%, -50%) rotate(45deg);
     width: 6px;
     height: 6px;
-    border-right: 1.5px solid #202020;
-    border-bottom: 1.5px solid #202020;
+    border-right: 1.5px solid var(--color-primary-black);
+    border-bottom: 1.5px solid var(--color-primary-black);
 }
 
 .select-button.active .arrow {
@@ -75,7 +75,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: #FFFDFD;
+    background: var(--color-primary-white);
     border: var(--border);
     border-radius: 8px;
     margin-top: 4px;

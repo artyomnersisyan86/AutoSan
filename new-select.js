@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const selectButtons = document.querySelectorAll('.select-button');
             const dropdowns = document.querySelectorAll('.dropdown');
 
-            // Close all dropdowns when clicking outside
             document.addEventListener('click', function(e) {
                 if (!e.target.closest('.filter-select')) {
                     selectButtons.forEach(btn => btn.classList.remove('active'));
@@ -14,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 button.addEventListener('click', function(e) {
                     e.stopPropagation();
 
-                    // Close all other dropdowns
                     selectButtons.forEach((btn, btnIndex) => {
                         if (btnIndex !== index) {
                             btn.classList.remove('active');
@@ -22,13 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     });
 
-                    // Toggle current dropdown
                     button.classList.toggle('active');
                     dropdowns[index].classList.toggle('show');
                 });
             });
 
-            // Handle dropdown item selection
             document.querySelectorAll('.dropdown-item').forEach(item => {
                 item.addEventListener('click', function(e) {
                     e.stopPropagation();
@@ -38,10 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     const button = filterSelect.querySelector('.select-button');
                     const span = button.querySelector('span');
 
-                    // Update button text
-                    span.textContent = this.textContent;
+                    span.innerHTML = this.innerHTML;
 
-                    // Close dropdown
                     button.classList.remove('active');
                     dropdown.classList.remove('show');
 

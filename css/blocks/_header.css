@@ -1,6 +1,6 @@
 .header {
     background-color: var(--color-bg-white);
-    box-shadow: 0px 4px 18px rgba(147, 147, 147, 0.07);
+    box-shadow: 0 4px 18px rgba(147, 147, 147, 0.07);
     padding: var(--spacing-md) var(--spacing-xxxxl);
     display: flex;
     justify-content: space-between;
@@ -9,6 +9,34 @@
     top: 0;
     z-index: 1000;
     /*gap: 0;*/
+}
+
+/*.language{*/
+/*.select-button{*/
+/*    border: none;*/
+/*    background: transparent;*/
+/*    justify-content: start;*/
+/*    gap: 8px;*/
+/*}*/
+/*}*/
+
+.language .select-button {
+    /*display: none;*/
+    border: none;
+    background: transparent;
+    justify-content: start;
+    gap: 8px;
+    padding: 0;
+}
+
+.language .select-button:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.language .filter-select {
+    width: 100%;
+    height: auto;
 }
 
 .header-left {
@@ -22,15 +50,19 @@
     align-items: center;
 }
 
-
-.divider{
-    width: 48px;
-    height: 0;
-    border: var(--border);
-    transform: rotate(-90deg);
+.header-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
 
-
+.divider {
+    width: 48px;
+    height: 0;
+    border: 1px solid var(--color-blue-15op);
+    transform: rotate(-90deg);
+}
 
 
 .phone-numbers {
@@ -39,13 +71,13 @@
     /*gap: var(--spacing-md);*/
     /*justify-content: center;*/
 }
-.phone-numbers svg{
+
+.phone-numbers svg {
     color: var(--color-primary-blue);
 }
 
 
-
-.header-right .search-input-wrapper svg{
+.header-right .search-input-wrapper svg {
     color: var(--color-primary-black);
 }
 
@@ -111,3 +143,34 @@
     border-radius: var(--radius-sm);
 }
 
+@media (max-width: 1260px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .header-action {
+        gap: var(--spacing-xl)
+    }
+
+    .header-right {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .header-left {
+        /*flex-direction: column;*/
+        /*gap: 10px;*/
+        /*align-items: center;*/
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .phone-numbers {
+        /*display: flex;*/
+        /*padding: 0;*/
+    }
+    .divider{
+   width:  20px
+}
+}
