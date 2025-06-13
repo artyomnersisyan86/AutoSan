@@ -49,8 +49,7 @@
     display: flex;
     align-items: center;
 }
-
-.header-action {
+.header-action{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -149,10 +148,6 @@
         gap: 20px;
     }
 
-    .header-action {
-        gap: var(--spacing-xl)
-    }
-
     .header-right {
         justify-content: space-between;
         width: 100%;
@@ -170,7 +165,4 @@
         /*display: flex;*/
         /*padding: 0;*/
     }
-    .divider{
-   width:  20px
-}
 }
