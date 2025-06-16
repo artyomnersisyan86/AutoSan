@@ -6,7 +6,7 @@
     padding: 21px 7px;
     gap: 18px;
     max-width: 304px;
-    width: 100vh;
+    width: 100%;
     border-radius: 10px;
 }
 .an-card {
@@ -21,6 +21,7 @@
     .card:hover,.an-card:hover {
         transform: translateY(-2px);
         box-shadow: var(--card-shadow);
+        transition: var(--transition-all);
     }
 }
 

@@ -7,7 +7,6 @@
 }
 
 
-/* Подвал */
 footer {
     background-color:var(--color-dark-black);
     color: white;
@@ -87,4 +86,16 @@ footer {
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
+}
+@media (max-width: 992px) {
+    .footer-columns{  grid-template-columns: auto auto auto auto}
+}
+
+@media (max-width: 768px) {
+    .footer{
+        padding: 16px!important;
+    }
+    .footer-columns{  grid-template-columns: auto auto}
+    gap: 20px!important;
+
 }

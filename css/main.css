@@ -16,7 +16,8 @@
 
 @import url("blocks/_media.css");
 @import url("blocks/_form.css");
-@import url("blocks/_select.css");
+
+
 @import url("blocks/_swiper-slider.css");
 @import url("blocks/_select-car-section.css");
 @import url("blocks/_top-products.css");
@@ -26,6 +27,7 @@
 @import url("blocks/_acardion.css");
 @import url("blocks/_brand.css");
 @import url("blocks/_news.css");
+@import url("blocks/_mobile-view.css");
 
 
 /*@import url("blocks/_burger_menu.css");*/

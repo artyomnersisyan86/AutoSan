@@ -88,3 +88,9 @@
 .details__content p:first-child {
     margin-top: 0;
 }
+summary:hover{
+    color: var(--color-primary-blue);
+    background-color:var(--color-primary-white);
+    padding-left: 3px;
+    transition: var(--transition-slow);
+}

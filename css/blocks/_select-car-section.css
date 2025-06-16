@@ -112,7 +112,11 @@
         justify-content: center;
         gap: 15px;
     }
-
+.select-car-section{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
     .filter-select {
         width: 180px;
     }
@@ -124,7 +128,7 @@
 
 @media (max-width: 768px) {
     .car-selection-card {
-        padding: 20px;
+        /*padding: 20px;*/
         gap: 20px;
     }
 
@@ -135,7 +139,7 @@
 
     .filter-select {
         width: 100%;
-        max-width: 300px;
+        /*max-width: 300px;*/
         margin: 0 auto;
     }
 

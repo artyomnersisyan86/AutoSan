@@ -148,3 +148,10 @@
     background: #5D5D5D;
     color: #FFFDFD;
 }
+
+@media (max-width: 1300px) {
+    .btn{
+        padding: 0 var(--font-xs);
+    }
+
+}
