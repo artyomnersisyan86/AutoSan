@@ -164,13 +164,41 @@
     .header {
         flex-direction: row;
         justify-content: space-between;
+              padding: 16px;
+        flex-wrap: nowrap;
+        gap: 24px;
     }
 
 
-.header-right, .header-left {
-    justify-content: end;
-    width: 100%;
-/}
+.header-right {
+    /*justify-content: end;*/
+    /*width: 100%;*/
+    gap: 5px;
+}
+
+    .header-left {
+        /*flex: 1;*/
+        /*gap: 120px;*/
+    }
+
+    .language {
+        display: none;
+    }
+
+
+
+    .logo img {
+        height: 48px;
+    }
+
+    .logo svg {
+        height: 32px;
+    }
+
+    .header-left-right {
+        display: none;
+    }
+
 .header-action{
     position: fixed;
     background: var(--color-primary-white);

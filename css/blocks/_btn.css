@@ -1,7 +1,7 @@
 .btn {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center!important;
     gap: var(--spacing-sm);
     padding: 0 calc(var(--spacing-md));
     border: none;
@@ -11,6 +11,7 @@
     height: var(--input-button-height);
     cursor: pointer;
     transition: var(--transition-slow);
+    min-width:48px
 }
 
 
