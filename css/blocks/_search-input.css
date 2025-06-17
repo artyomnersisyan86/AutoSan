@@ -86,13 +86,13 @@
     height: 48px;
     border: var(--border);
     border-radius: 8px;
-    background-color: white;
+    background-color: var(--color-bg-white);
     cursor: pointer;
     transition: var(--transition-all);
 }
 
 .an-mobile-search-btn:hover {
-       border-color: var(--color-blue-15op);
+    border-color: var(--color-blue-15op);
     box-shadow: var(--card-shadow);
 }
 
@@ -116,6 +116,8 @@
 
 .an-mobile-search-expanded.an-active {
     transform: translateY(0);
+    top: 80px;
+    height: 100%;
 }
 
 .an-mobile-search-header {
@@ -159,7 +161,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    /*background-color: rgba(0, 0, 0, 0.5);*/
     z-index: 999;
     opacity: 0;
     visibility: hidden;
@@ -177,6 +179,7 @@
         display: none;
     }
 
+
     .an-mobile-search-btn {
         display: flex;
     }
@@ -186,6 +189,10 @@
     .an-mobile-search-btn {
         display: none !important;
     }
+
+    /*.closeButton {*/
+    /*    display: flex;*/
+    /*}*/
 
     .an-mobile-search-expanded {
         display: none !important;
@@ -202,12 +209,12 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .an-demo-title {
     font-size: var(--font-xl);
-    color:var(--color-primary-black);
+    color: var(--color-primary-black);
     text-align: center;
 }
 
@@ -229,3 +236,16 @@
     font-size: 12px;
     z-index: 10000;
 }
+
+.modal {
+    position: relative;
+}
+
+dialog, dialog::backdrop {
+    opacity: 0;
+    scale: 1.05;
+    transition-duration: 0.2s;
+}
+    #closeButton {
+        display: flex;
+    }

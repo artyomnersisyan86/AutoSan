@@ -171,7 +171,7 @@
 
 
 .header-right {
-    /*justify-content: end;*/
+    justify-content: end;
     /*width: 100%;*/
     gap: 5px;
 }

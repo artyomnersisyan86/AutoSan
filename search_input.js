@@ -8,6 +8,7 @@ const anSearchContainer = document.getElementById('anSearchContainer');
         const anBackButton = document.getElementById('anBackButton');
         const anSearchOverlay = document.getElementById('anSearchOverlay');
         const anScreenIndicator = document.getElementById('anScreenIndicator');
+        const anMobileSearchHeader = document.querySelector('.an-mobile-search-header');
 
         // Screen size indicator (for demo)
         function updateScreenIndicator() {
@@ -22,7 +23,7 @@ const anSearchContainer = document.getElementById('anSearchContainer');
         updateScreenIndicator();
 
         // Desktop search functionality
-        anSearchInput.addEventListener('input', function() {
+        anSearchInput?.addEventListener('input', function() {
             if (this.value.length > 0) {
                 anSearchContainer.classList.add('an-has-content');
             } else {
@@ -44,7 +45,10 @@ const anSearchContainer = document.getElementById('anSearchContainer');
 
         // Mobile search functionality
         anMobileSearchBtn.addEventListener('click', function() {
+
+
             openMobileSearch();
+
         });
 
         anBackButton.addEventListener('click', function() {
@@ -52,6 +56,9 @@ const anSearchContainer = document.getElementById('anSearchContainer');
         });
 
         anSearchOverlay.addEventListener('click', function() {
+            anBackButton.style.display = 'none'
+             anMobileSearchBtn.style.display = 'flex'
+
             closeMobileSearch();
         });
 
@@ -65,7 +72,7 @@ const anSearchContainer = document.getElementById('anSearchContainer');
 
         anMobileClearButton.addEventListener('click', function() {
             anMobileSearchInput.value = '';
-            anMobileClearButton.style.display = 'none';
+            anMobileClearButton.style.display = 'block';
             anMobileSearchInput.focus();
         });
 
@@ -81,8 +88,16 @@ const anSearchContainer = document.getElementById('anSearchContainer');
             document.body.style.overflow = 'hidden';
             anSearchOverlay.classList.add('an-active');
             anMobileSearchExpanded.classList.add('an-active');
-
+             anMobileSearchExpanded.prepend(anSearchContainer)
+            anSearchContainer.style.display = 'flex';
+            anMobileSearchBtn.style.display = 'none'
+            anBackButton.style.display = 'flex'
+             anSearchInput.value = '';
             // Focus input after animation
+
+
+
+
             setTimeout(() => {
                 anMobileSearchInput.focus();
             }, 300);
@@ -92,7 +107,7 @@ const anSearchContainer = document.getElementById('anSearchContainer');
             document.body.style.overflow = '';
             anSearchOverlay.classList.remove('an-active');
             anMobileSearchExpanded.classList.remove('an-active');
-
+  anSearchInput.value = '';
             // Clear mobile input
             anMobileSearchInput.value = '';
             anMobileClearButton.style.display = 'none';
@@ -121,7 +136,11 @@ const anSearchContainer = document.getElementById('anSearchContainer');
             const currentY = e.touches[0].clientY;
             const deltaY = currentY - startY;
 
-            if (deltaY > 50 && anMobileSearchInput.value === '') {
+            // if (deltaY > 50 && anMobileSearchInput.value === '') {
+            //     closeMobileSearch();
+            // }
+
+            if (deltaY > 50 && anSearchInput.value === '') {
                 closeMobileSearch();
             }
         });
