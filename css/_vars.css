@@ -1,5 +1,4 @@
 :root {
-
     /* main colors */
     --color-primary-blue: #002DCA;
     --color-light-blue: #4D73F7;
@@ -67,5 +66,8 @@
     --transition-normal: 0.3s;
     --transition-all: all 0.3s ease;
     --transition-slow: 0.5s;
+
+
+    
 
 }

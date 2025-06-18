@@ -93,6 +93,9 @@
 
 .current-price {
     font-weight: 700;
+    font-size: var(--font-lg);
+    line-height: 19px;
+    color: var(--color-primary-black)
 }
 
 .original-price {

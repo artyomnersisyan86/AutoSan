@@ -1,27 +1,27 @@
-/* Connecting the Mardoto font */
-@font-face {
-    font-family: 'Mardoto';
-    src: url('fonts/Mardoto-Regular.woff2') format('woff2'),
-    url('fonts/Mardoto-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
+/*!* Connecting the Mardoto font *!*/
+/*@font-face {*/
+/*    font-family: 'Mardoto';*/
+/*    src: url('fonts/Mardoto-Regular.woff2') format('woff2'),*/
+/*    url('fonts/Mardoto-Regular.woff') format('woff');*/
+/*    font-weight: 400;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Mardoto';
-    src: url('fonts/Mardoto-Medium.woff2') format('woff2'),
-    url('fonts/Mardoto-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Mardoto';*/
+/*    src: url('fonts/Mardoto-Medium.woff2') format('woff2'),*/
+/*    url('fonts/Mardoto-Medium.woff') format('woff');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Mardoto';
-    src: url('fonts/Mardoto-Bold.woff2') format('woff2'),
-    url('fonts/Mardoto-Bold.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Mardoto';*/
+/*    src: url('fonts/Mardoto-Bold.woff2') format('woff2'),*/
+/*    url('fonts/Mardoto-Bold.woff') format('woff');*/
+/*    font-weight: 700;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/

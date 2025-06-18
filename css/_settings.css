@@ -6,12 +6,9 @@
     padding: 0;
 }
 
-.page {
-}
-
 
 body {
-    font-family: var(--font-family-base), sans-serif;
+    font-family: var(--font-family-base), sans-serif, Helvetica;
     background-color: var(--color-bg-white);
     color: var(--color-grey-bedge);
     line-height: 1.6;

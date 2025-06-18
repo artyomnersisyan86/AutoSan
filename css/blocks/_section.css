@@ -48,9 +48,10 @@
 
 .section-container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 20px;
     width: 100%;
 
 }
@@ -65,7 +66,7 @@
     .section-container{
         display: grid;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         grid-template-columns: auto auto;
     }
     .section-bg {
