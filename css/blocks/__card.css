@@ -5,10 +5,11 @@
     align-items: center;
     padding: 21px 7px;
     gap: 18px;
-    max-width: 304px;
+    max-width: 290px;
     width: 100%;
     border-radius: 10px;
 }
+
 .an-card {
     background: var(--color-primary-white);
     border: var(--border);
@@ -17,12 +18,20 @@
     transition: var(--transition-all);
 }
 
-@media (any-hover: hover) {
-    .card:hover,.an-card:hover {
-        transform: translateY(-2px);
-        box-shadow: var(--card-shadow);
-        transition: var(--transition-all);
-    }
+
+.card, .an-card, img, svg {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    object-fit: cover;
+    transition: transform 1s cubic-bezier(1, 1, 1, 2);
 }
 
 
+.card:hover, img, svg {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-out;
+}
+.an-card:hover {
+          box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease-out;
+}

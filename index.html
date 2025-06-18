@@ -21,7 +21,7 @@
             <img src="images/autosan-logo.png" alt="AUTOSAN">
         </a>
         <div class="header-left-right">
-            <a href="#" class="btn btn-primary btn-with-icons">
+            <a href="#modal-center" class="btn btn-primary btn-with-icons">
                 <span class="icon-left">
                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                      <path
@@ -228,7 +228,20 @@
     </div>
     <!-- Mobile menu button -->
 
-
+    <div id="modal-center" class="modal modal-center">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Центр экрана</h2>
+                <a href="#" class="close-btn">&times;</a>
+            </div>
+            <div class="modal-body">
+                <p>Это модальное окно расположено в центре экрана.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-secondary">Закрыть</a>
+            </div>
+        </div>
+    </div>
 </header>
 <!--Navigation Menu-->
 
@@ -1578,7 +1591,7 @@
             breakpoints: {
                 "@0.00": {
                     slidesPerView: 2,
-                    spaceBetween: 0,
+                    spaceBetween: 10,
                 },
                 "@0.75": {
                     slidesPerView: 2,
@@ -1590,7 +1603,7 @@
                 },
                 "@1.50": {
                     slidesPerView: 4,
-                    spaceBetween: 50,
+                    spaceBetween: 24,
                 },
             },
         });

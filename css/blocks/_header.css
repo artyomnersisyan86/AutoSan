@@ -19,7 +19,7 @@
     background: transparent;
     justify-content: start;
     height: 100%;
-    gap: 8px;
+    /*gap: 0px;*/
     padding: 0;
 }
 

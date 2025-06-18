@@ -42,6 +42,9 @@
     width: 100%;
 }
 
+
+
+
 .small-title {
     font-weight: 500;
     font-size: var(--font-lg);
@@ -61,6 +64,7 @@
     font-size: var(--font-sm);
     line-height: var(--font-md);
     color: var(--color-grey-bedge);
+
     text-align: left;
     /*padding: 0 14px;*/
 }

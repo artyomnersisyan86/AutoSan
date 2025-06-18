@@ -10,9 +10,11 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    gap: var(--font-xxl);
-    padding: 0 var(--font-xxl);
+    padding: 10px var(--font-xxl);
 
+}
+.main-nav .divider{
+    width: 31px;
 }
 .main-nav ul li{
     padding-left: var(--shadow-md);

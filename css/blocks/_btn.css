@@ -73,26 +73,7 @@
     transition: color var(--transition-fast);
 }
 
-/*.btn-with-icons:hover .icon-left,*/
-/*.btn-with-icons:hover .icon-right {*/
-/*    color: var(--color-primary-blue); !* Цвет иконки при наведении *!*/
-/*}*/
 
-/* Эти стили для img больше не нужны, если SVG встроены */
-/*.btn-with-icons .icon-left img,*/
-/*.btn-with-icons .icon-right img {*/
-/*    display: none;*/
-/*}*/
-
-/*.btn-with-icons:hover .icon-left,*/
-/*.btn-with-icons:hover .icon-right {*/
-/*    filter: var(--color-primary-white);*/
-/*}*/
-
-/*.btn-with-icons:hover .icon-left,*/
-/*.btn-with-icons:hover .icon-right {*/
-/*    filter: var(--color-primary-white);*/
-/*}*/
 
 
 .badge-button {
@@ -128,16 +109,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 4px 8px;
+    padding: 4px 15px;
     max-width: max-content;
-    /*position: absolute;*/
-    /*left: 14px;*/
-    /*top: 14px;*/
     border-radius: 4px;
     font-weight: 500;
     font-size: var(--font-sm);
     line-height: var(--font-md);
-    /*z-index: 2;*/
+    z-index: 2;
+
+
+
 }
 
 .badge.new {
