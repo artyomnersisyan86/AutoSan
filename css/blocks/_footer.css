@@ -10,9 +10,10 @@ footer {
 
 .footer-columns {
     display: flex;
+    justify-content: space-around;
     /*grid-template-columns: repeat(6, 1fr);*/
     flex-wrap: wrap;
-    gap: 80px;
+    gap: var(--spacing-xxxxl);
     margin-bottom: 40px;
 }
 
