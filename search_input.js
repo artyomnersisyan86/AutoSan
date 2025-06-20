@@ -3,12 +3,12 @@ const anSearchInput = document.getElementById('anSearchInput');
 const anClearButton = document.getElementById('anClearButton');
 const anMobileSearchBtn = document.getElementById('anMobileSearchBtn');
 const anMobileSearchExpanded = document.getElementById('anMobileSearchExpanded');
-const anMobileSearchInput = document.getElementById('anMobileSearchInput');
-const anMobileClearButton = document.getElementById('anMobileClearButton');
+// const anMobileSearchInput = document.getElementById('anMobileSearchInput');
+// const anMobileClearButton = document.getElementById('anMobileClearButton');
 const anBackButton = document.getElementById('anBackButton');
 const anSearchOverlay = document.getElementById('anSearchOverlay');
-const anScreenIndicator = document.getElementById('anScreenIndicator');
-const anMobileSearchHeader = document.querySelector('.an-mobile-search-header');
+// const anScreenIndicator = document.getElementById('anScreenIndicator');
+// const anMobileSearchHeader = document.querySelector('.an-mobile-search-header');
 
 // Screen size indicator (for demo)
 function updateScreenIndicator() {
@@ -45,10 +45,7 @@ anSearchInput.addEventListener('keypress', function (e) {
 
 // Mobile search functionality
 anMobileSearchBtn.addEventListener('click', function () {
-
-
     openMobileSearch();
-
 });
 
 anBackButton.addEventListener('click', function () {
@@ -58,7 +55,6 @@ anBackButton.addEventListener('click', function () {
 anSearchOverlay.addEventListener('click', function () {
     anBackButton.style.display = 'none'
     anMobileSearchBtn.style.display = 'flex'
-
     closeMobileSearch();
 });
 

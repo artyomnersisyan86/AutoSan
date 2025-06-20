@@ -196,12 +196,12 @@ class MobileMenu {
 }
 
 // Автоматическая инициализация
-document.addEventListener('DOMContentLoaded', () => {
-    // Проверяем наличие элементов перед инициализацией
-    if (document.querySelector('.mobile-menu-btn') && document.querySelector('.mobile-nav-overlay')) {
-        window.mobileMenu = new MobileMenu()
-    }
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//     // Проверяем наличие элементов перед инициализацией
+//     if (document.querySelector('.mobile-menu-btn') && document.querySelector('.mobile-nav-overlay')) {
+//         window.mobileMenu = new MobileMenu()
+//     }
+// })
 
 // Экспорт для модульных систем
 if (typeof module !== 'undefined' && module.exports) {
@@ -211,21 +211,21 @@ if (typeof module !== 'undefined' && module.exports) {
 // Пример использования с кастомными настройками:
 
 const customMenu = new MobileMenu({
-    menuBtnSelector: '.my-menu-btn',
-    overlaySelector: '.my-overlay',
-    closeBtnSelector: '.my-close-btn',
-    activeClass: 'is-open',
+    menuBtnSelector: '.mobile-menu-btn',
+    overlaySelector: '.mobile-nav-overlay',
+    closeBtnSelector: '.mobile-nav-close',
+    activeClass: 'active',
     breakpoint: 1024,
     disableBodyScroll: false
 });
-const catalogBtn = new MobileMenu({
-    menuBtnSelector: '.my-menu-btn',
-    overlaySelector: '.my-overlay',
-    closeBtnSelector: '.my-close-btn',
-    activeClass: 'is-open',
-    breakpoint: 1024,
-    disableBodyScroll: false
-})
+// const catalogBtn = new MobileMenu({
+//     menuBtnSelector: '.btn-catalog',
+//     overlaySelector: '.mobile-nav-overlay',
+//     closeBtnSelector: '.mobile-nav-close',
+//     activeClass: true,
+//     breakpoint: 1024,
+//     disableBodyScroll: false
+// })
 
 // Слушатели кастомных событий
 document.addEventListener('mobileMenuOpen', (e) => {
@@ -237,6 +237,11 @@ document.addEventListener('mobileMenuClose', (e) => {
 })
 
 // Программное управление
-customMenu.open()
-customMenu.close()
-customMenu.toggle()
+// customMenu.open()
+// customMenu.close()
+// customMenu.toggle()
+
+//
+// catalogBtn.open()
+// catalogBtn.close()
+// catalogBtn.toggle()
