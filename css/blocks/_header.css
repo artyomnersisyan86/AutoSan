@@ -119,7 +119,9 @@
 /*    height: 15px;*/
 /*    border-radius: var(--radius-sm);*/
 /*}*/
-
+.btn-catalog-mobile{
+    display: none;
+}
 @media (max-width: 1300px) {
     .header {
         padding: var(--spacing-sm) var(--spacing-xxl);
@@ -198,7 +200,9 @@
     .header-left-right {
         display: none;
     }
-
+.btn-catalog-mobile{
+    display: flex;
+}
 .header-action{
     position: fixed;
     background: var(--color-primary-white);

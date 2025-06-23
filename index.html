@@ -7,9 +7,10 @@
     <!--    <link rel="stylesheet" href="styles.css">-->
     <link rel="stylesheet" href="css/main.css">
     <!-- Font Mardoto -->
-<!--    <link href="https://db.onlinewebfonts.com/c/65f00b36a6117d22e09397fd6320b3eb?family=Mardoto" rel="stylesheet">-->
-<!--    <link rel="stylesheet" href="css/_font.css">-->
-    <link href="https://db.onlinewebfonts.com/c/65f00b36a6117d22e09397fd6320b3eb?family=Mardoto" rel="stylesheet" type="text/css"/>
+    <!--    <link href="https://db.onlinewebfonts.com/c/65f00b36a6117d22e09397fd6320b3eb?family=Mardoto" rel="stylesheet">-->
+    <!--    <link rel="stylesheet" href="css/_font.css">-->
+    <link href="https://db.onlinewebfonts.com/c/65f00b36a6117d22e09397fd6320b3eb?family=Mardoto" rel="stylesheet"
+          type="text/css"/>
     <!--swiper slider-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
@@ -23,7 +24,7 @@
             <img src="images/autosan-logo.png" alt="AUTOSAN">
         </a>
         <div class="header-left-right">
-            <a href="#modal-center" class="btn btn-primary btn-with-icons">
+            <button  class="btn btn-primary btn-with-icons btn-catalog">
                 <span class="icon-left">
                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                      <path
@@ -40,7 +41,9 @@
                              fill="currentColor"/>
                  </svg>
                 </span>Կատալոգ
-            </a>
+            </button>
+
+
             <span class="divider"></span>
             <div class="phone-numbers">
                 <a href="tel:+37493010203" class="btn btn-text btn-with-icons">
@@ -66,7 +69,7 @@
         </div>
 
     </div>
-
+    <!--End header left  -->
     <!--header right-->
     <div class="header-right">
 
@@ -90,7 +93,7 @@
                         </svg>
                     </button>
                 </div>
-
+                <!-- End Search input -->
                 <!-- Mobile Search Button -->
                 <button class="an-mobile-search-btn" id="anMobileSearchBtn">
                     <svg class="an-search-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,34 +116,34 @@
 
         <div class="an-mobile-search-expanded" id="anMobileSearchExpanded">
             <!-- Mobile when something is found in a search result-->
-<!--            <div class="an-mobile-search-header">-->
+            <!--            <div class="an-mobile-search-header">-->
 
-<!--                <div class="list-container">-->
-<!--                    <ul>-->
-<!--                        <li>-->
-<!--                            <div class="text-label">Ընթացագործ</div>-->
-<!--                            <button class="close-btn">-->
-<!--                                <div class="close-icon"></div>-->
-<!--                            </button>-->
-<!--                        </li>-->
+            <!--                <div class="list-container">-->
+            <!--                    <ul>-->
+            <!--                        <li>-->
+            <!--                            <div class="text-label">Ընթացագործ</div>-->
+            <!--                            <button class="close-btn">-->
+            <!--                                <div class="close-icon"></div>-->
+            <!--                            </button>-->
+            <!--                        </li>-->
 
-<!--                        <li>-->
-<!--                            <div class="text-label">Ընթացագործ</div>-->
-<!--                            <button class="close-btn">-->
-<!--                                <div class="close-icon"></div>-->
-<!--                            </button>-->
-<!--                        </li>-->
+            <!--                        <li>-->
+            <!--                            <div class="text-label">Ընթացագործ</div>-->
+            <!--                            <button class="close-btn">-->
+            <!--                                <div class="close-icon"></div>-->
+            <!--                            </button>-->
+            <!--                        </li>-->
 
-<!--                        <li>-->
-<!--                            <div class="text-label">Ընթացագործ</div>-->
-<!--                            <button class="close-btn">-->
-<!--                                <div class="close-icon"></div>-->
-<!--                            </button>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
+            <!--                        <li>-->
+            <!--                            <div class="text-label">Ընթացագործ</div>-->
+            <!--                            <button class="close-btn">-->
+            <!--                                <div class="close-icon"></div>-->
+            <!--                            </button>-->
+            <!--                        </li>-->
+            <!--                    </ul>-->
+            <!--                </div>-->
 
-<!--            </div>-->
+            <!--            </div>-->
             <!--No search results-->
             <div class="no-search-results-container">
                 <p class="text-label">Արդյունքներ չեն գտնվել</p>
@@ -158,6 +161,24 @@
                 fill="#002DCA"/>
         </svg>
       </span>
+            </a>
+            <a class="btn btn-outline btn-with-icons btn-catalog-mobile">
+                <span class="icon-left">
+                 <svg width="24" height="24" viewBox="0 0 24 24" fill="#002DCA" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                             d="M5.625 3.75C4.17525 3.75 3 4.92525 3 6.375C3 7.82475 4.17525 9 5.625 9H18.375C19.8247 9 21 7.82475 21 6.375C21 4.92525 19.8247 3.75 18.375 3.75H5.625Z"
+                             fill="#002DCA"/>
+                     <path
+                             d="M3.75 11.25C3.33579 11.25 3 11.5858 3 12C3 12.4142 3.33579 12.75 3.75 12.75H20.25C20.6642 12.75 21 12.4142 21 12C21 11.5858 20.6642 11.25 20.25 11.25H3.75Z"
+                             fill="#002DCA"/>
+                     <path
+                             d="M3 15.75C3 15.3358 3.33579 15 3.75 15H20.25C20.6642 15 21 15.3358 21 15.75C21 16.1642 20.6642 16.5 20.25 16.5H3.75C3.33579 16.5 3 16.1642 3 15.75Z"
+                             fill="#002DCA"/>
+                     <path
+                             d="M3.75 18.75C3.33579 18.75 3 19.0858 3 19.5C3 19.9142 3.33579 20.25 3.75 20.25H20.25C20.6642 20.25 21 19.9142 21 19.5C21 19.0858 20.6642 18.75 20.25 18.75H3.75Z"
+                             fill="#002DCA"/>
+                 </svg>
+                </span>
             </a>
             <a href="#" class="btn btn-outline btn-with-icons">
       <span class="icon-left">
@@ -197,6 +218,8 @@
       </span>
             </a>
         </div>
+        <!-- End No-result-found     -->
+
         <!--language-->
         <div class="language">
             <div class="filters-container">
@@ -213,7 +236,10 @@
                 </div>
             </div>
         </div>
-    <!-- Mobile menu button -->
+        <!--End language-->
+
+
+        <!-- Mobile menu button -->
         <button class="mobile-menu-btn btn btn-text">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0.5" y="0.5" width="47" height="47" rx="7.5" stroke="#002DCA" stroke-opacity="0.15"/>
@@ -226,12 +252,12 @@
             </svg>
 
         </button>
-
+        <!--End Mobile menu button -->
     </div>
+    <!--End header right-->
 
 </header>
 <!--Navigation Menu-->
-
 <nav class="main-nav">
     <ul>
         <li class="tabLinks"><a href="#" class="active">Գլխավոր</a>
@@ -259,6 +285,517 @@
         </li>
     </ul>
 </nav>
+<!--End Navigation Menu-->
+
+<!--Catalog overlay tabs-->
+<div class="an-overlay">
+    <div class="tabs-container vertical" id="tabsContainer">
+
+
+        <div class="tabs-wrapper">
+            <!-- Список табов -->
+            <div class="tabs-list" id="tabsList">
+                <div class="tab-item active" data-tab="products_1">
+                    <span class="tab-title">Ավտոապրանքներ</span>
+                    <span class="tab-arrow"> <img src="./images/arrow_right.png" > </span>
+                </div>
+                <div class="tab-item" data-tab="products_2">
+                    <span class="tab-title">Արգելակման համակարգ</span>
+                    <span class="tab-arrow"> <img src="./images/arrow_right.png" > </span>
+                </div>
+                <div class="tab-item" data-tab="products_3">
+                    <span class="tab-title">Շարժիչ և արտանետում</span>
+                    <span class="tab-arrow"> <img src="./images/arrow_right.png" > </span>
+                </div>
+                <div class="tab-item" data-tab="products_4">
+                    <span class="tab-title">Ընթացային մասեր</span>
+                    <span class="tab-arrow"> <img src="./images/arrow_right.png" > </span>
+                </div>
+                <div class="tab-item" data-tab="products_5">
+                    <span class="tab-title">Փոխանցման տուփ</span>
+                    <span class="tab-arrow"> <img src="./images/arrow_right.png" > </span>
+                </div>
+            </div>
+
+            <!-- Content Tabs -->
+            <div class="tabs-content">
+                <!-- Mobile Header -->
+                <div class="mobile-header" id="mobileHeader" style="display: none;">
+                    <button class="back-button" id="backButton">←</button>
+                    <span class="mobile-title" id="mobileTitle">Наши продукты</span>
+                </div>
+
+
+                <div class="tab-content active" data-content="products_1">
+                    <div class="mobile-content">
+                        <div class="content-columns">
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" data-content="products_2">
+                    <div class="mobile-content">
+                        <div class="content-columns">
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" data-content="products_3">
+                    <div class="mobile-content">
+                        <div class="content-columns">
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" data-content="products_4">
+                    <div class="mobile-content">
+                        <div class="content-columns">
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" data-content="products_5">
+                    <div class="mobile-content">
+                        <div class="content-columns">
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="content-column">
+                                <h3>Արգելակման դետալներ</h3>
+                                <ul>
+                                    <li><a href="#">ԴԵտալ 1</a></li>
+                                    <li><a href="#">ԴԵտալ 2</a></li>
+                                    <li><a href="#">ԴԵտալ 3</a></li>
+                                    <li><a href="#">ԴԵտալ 4</a></li>
+                                    <li><a href="#">ԴԵտալ 5</a></li>
+                                    <li><a href="#">ԴԵտալ 6</a></li>
+                                </ul>
+                                <a href="#"  class="btn btn-text content-view-more" onclick="myFunction()">
+                                    Տեսնել Ավելին
+                                    <svg class="an-btn-icon" viewBox="0 0 24 24">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Catalog overlay tabs-->
+
 <!-- Mobile Navigation Overlay -->
 <div class="mobile-nav-overlay">
     <div class="mobile-nav-content">
@@ -314,6 +851,8 @@
 
     </div>
 </div>
+<!-- End Mobile Navigation Overlay -->
+
 <main class="main-content">
     <!--slider-->
     <section class="slider-section">
@@ -1603,5 +2142,6 @@
 </script>
 <script src="mobile-view.js"></script>
 <script src="search_input.js"></script>
+<script src="tab.js"></script>
 </body>
 </html>

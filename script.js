@@ -105,3 +105,6 @@ if (searchIcon) {
     });
 }
 
+function myFunction() {
+    alert("Barev Valodik");
+}

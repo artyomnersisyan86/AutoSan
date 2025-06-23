@@ -81,7 +81,6 @@ class MobileMenu {
     bindEvents() {
         if (!this.findElements()) return
 
-        // Открытие меню
         this.menuBtn.addEventListener('click', (e) => {
             e.preventDefault()
             this.open()
@@ -122,10 +121,17 @@ class MobileMenu {
     }
 
     open() {
-        if (this.isOpen) return
+        // if (this.isOpen) return
+console.log(444, this.isOpen)
 
-        this.overlay.classList.add(this.config.activeClass)
-        this.isOpen = true
+        if (this.isOpen) {
+            this.overlay.classList.remove(this.config.activeClass)
+            this.isOpen = false
+        }else {
+            this.overlay.classList.add(this.config.activeClass)
+            this.isOpen = true
+        }
+
 
         if (this.config.disableBodyScroll) {
             document.body.style.overflow = 'hidden'
@@ -218,14 +224,22 @@ const customMenu = new MobileMenu({
     breakpoint: 1024,
     disableBodyScroll: false
 });
-// const catalogBtn = new MobileMenu({
-//     menuBtnSelector: '.btn-catalog',
-//     overlaySelector: '.mobile-nav-overlay',
-//     closeBtnSelector: '.mobile-nav-close',
-//     activeClass: true,
-//     breakpoint: 1024,
-//     disableBodyScroll: false
-// })
+const catalogBtn = new MobileMenu({
+    menuBtnSelector: '.btn-catalog',
+    overlaySelector: '.an-overlay',
+    // closeBtnSelector: '.empty',
+    activeClass: 'an-active',
+    breakpoint: 1024,
+    disableBodyScroll: false
+});
+const catalogMobile = new MobileMenu({
+    menuBtnSelector: '.btn-catalog-mobile',
+    overlaySelector: '.an-overlay',
+    // closeBtnSelector: '.empty',
+    activeClass: 'an-active',
+    breakpoint: 1024,
+    disableBodyScroll: false
+})
 
 // Слушатели кастомных событий
 document.addEventListener('mobileMenuOpen', (e) => {
