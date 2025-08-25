@@ -78,6 +78,9 @@
     opacity: 0;
     visibility: visible;
     transition: all 0.3s ease;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 var(--spacing-xxxxl) 0 0;
 }
 
 .an-overlay.an-active {
@@ -90,6 +93,7 @@
 @media (max-width: 768px) {
     .an-overlay{
         top: 80px;
+        padding: 0;
     }
 
 }

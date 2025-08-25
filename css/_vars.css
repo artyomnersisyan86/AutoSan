@@ -30,7 +30,7 @@
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.3);
     --shadow-section: 0 4px 20px rgba(0, 0, 0, 0.05);
     --card-shadow: 0 8px 25px rgba(0, 45, 202, 0.1);
-    --product-card-shadow:0px 4px 27.3px rgba(172, 172, 172, 0.25);
+    --product-card-shadow: 0px 4px 27.3px rgba(172, 172, 172, 0.25);
 
 
     /* Адаптивные размеры шрифтов */
@@ -67,7 +67,7 @@
     --transition-all: all 0.3s ease;
     --transition-slow: 0.5s;
 
+    --container-max-widths: 1440px;
 
-    
 
 }
