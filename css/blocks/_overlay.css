@@ -1,5 +1,3 @@
-
-
 /* Mobile Search Button */
 /*.an-mobile-search-btn {*/
 /*    float: right;*/
@@ -64,36 +62,34 @@
 /*    justify-content: center;*/
 /*}*/
 
-
-
 /* Overlay */
 .an-overlay {
-    position: fixed;
-    top: 90px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--color-bg-white);
-    min-height: max-content;
-    opacity: 0;
-    visibility: visible;
-    transition: all 0.3s ease;
-    margin: 0 auto;
-    max-width: 1440px;
-    padding: 0 var(--spacing-xxxxl) 0 0;
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-bg-white);
+  min-height: max-content;
+  /* opacity: 0; */
+  display: none;
+  /* visibility: հidden; */
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 var(--spacing-xxxxl) 0 0;
 }
 
 .an-overlay.an-active {
-    opacity: 1;
-    z-index: 2;
-
-    visibility: visible;
+  /* opacity: 1; */
+  z-index: 2;
+  display: block;
+  /* visibility: visible; */
 }
 
 @media (max-width: 768px) {
-    .an-overlay{
-        top: 80px;
-        padding: 0;
-    }
-
+  .an-overlay {
+    top: 80px;
+    padding: 0;
+  }
 }

@@ -1,73 +1,34 @@
-/*.h2-title {*/
-/*    font-weight: 400;*/
-/*    font-size: 30px;*/
-/*    line-height: 30px;*/
-/*    color: var(--dark);*/
-/*    margin: 0;*/
-/*}*/
-
-/*.small-title {*/
-/*    font-style: normal;*/
-/*    font-weight: 400;*/
-/*    font-size: 18px;*/
-/*    line-height: 30px;*/
-/*    color: var(--dark);*/
-/*    margin: 0;*/
-/*}*/
-
-/*.paragraph {*/
-/*    margin: 0;*/
-/*    font-weight: 400;*/
-/*    font-size: var(--main-font-size);*/
-/*    line-height: 24px;*/
-/*    color: var(--dark);*/
-/*}*/
-
-/*.paragraph-large {*/
-/*    margin: 0;*/
-/*    font-style: normal;*/
-/*    font-weight: 400;*/
-/*    font-size: 50px;*/
-/*    line-height: 59px;*/
-/*    color: var(--dark);*/
-/*}*/
-
-
 .title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    color: var(--color-primary-black);
-    width: 100%;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: var(--color-primary-black);
+  width: 100%;
 }
 
-
-
-
 .small-title {
-    font-weight: 500;
-    font-size: var(--font-lg);
-    line-height: 21px;
-    color: var(--color-primary-black);
+  font-weight: 600;
+  font-size: var(--font-lg);
+  line-height: 21px;
+  color: var(--color-primary-black);
 }
 
 .title-md {
-    font-weight: 500;
-    font-size: var(--font-xl);
-    line-height: 28px;
-    color: var(--color-primary-black);
+  font-weight: 600;
+  font-size: var(--font-xl);
+  line-height: 28px;
+  color: var(--color-primary-black);
 }
 
 .description {
-    font-weight: 400;
-    font-size: var(--font-sm);
-    line-height: var(--font-md);
-    color: var(--color-grey-bedge);
+  font-weight: 400;
+  font-size: var(--font-sm);
+  line-height: var(--font-md);
+  color: var(--color-grey-bedge);
 
-    text-align: left;
-    /*padding: 0 14px;*/
+  text-align: left;
+  /*padding: 0 14px;*/
 }
-.description-2{
-
+.description-2 {
 }

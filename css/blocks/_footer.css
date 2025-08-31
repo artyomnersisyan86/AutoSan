@@ -16,7 +16,9 @@ footer {
     gap: var(--spacing-xxxxl);
     margin-bottom: 40px;
 }
-
+.footer-logo{
+    padding: 16px;
+}
 .footer-column h3 {
     font-size: 18px;
     margin-bottom: 16px;

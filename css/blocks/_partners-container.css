@@ -25,6 +25,8 @@
 /*    box-shadow: var(--shadow-lg);*/
 /*}*/
 @media (max-width: 768px) {
-    display: grid;
-    grid-template-columns: auto  auto;
+    .partners-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }

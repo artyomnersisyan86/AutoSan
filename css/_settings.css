@@ -1,54 +1,76 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
 
 body {
-    font-family: 'Mardoto', sans-serif, Helvetica;
-    background-color: var(--color-bg-white);
-    color: var(--color-grey-bedge);
-    line-height: 1.6;
-    font-size: var(--font-md);
-    font-weight: 400;
+  font-family: "Mardoto", sans-serif, Helvetica;
+  background-color: var(--color-bg-white);
+  color: var(--color-grey-bedge);
+  line-height: 1.6;
+  font-size: var(--font-md);
+  font-weight: 400;
 }
 
-
 .list-reset {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .btn-reset {
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
 }
 
-
 a {
-    text-decoration: none;
-    color: var(--color-primary-black);
+  text-decoration: none;
+  color: var(--color-primary-black);
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    object-fit: cover;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
 }
 .container {
-    max-width:var(--container-max-widths);
-    margin: 0 auto;
+  max-width: var(--container-max-widths);
+  padding: var(--spacing-md) var(--spacing-xxxxl);
+  margin: 0 auto;
+}
+
+
+.truncate {
+    display: inline-block;
+    max-width: 185px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+@media (max-width: 1300px) {
+    .container {
+        padding: var(--spacing-sm) var(--spacing-xxl);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 16px;
+    }
 }
 /*-----------------------------------------*/
