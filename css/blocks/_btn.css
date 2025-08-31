@@ -1,7 +1,7 @@
 .btn {
     display: inline-flex;
     align-items: center;
-    justify-content: center!important;
+    justify-content: center !important;
     gap: var(--spacing-sm);
     padding: 0 calc(var(--spacing-md));
     border: none;
@@ -11,9 +11,8 @@
     height: var(--input-button-height);
     cursor: pointer;
     transition: var(--transition-slow);
-    min-width:48px
+    min-width: 48px
 }
-
 
 
 .btn-primary {
@@ -74,14 +73,10 @@
 }
 
 
-
-
 .badge-button {
     position: relative;
     font-size: var(--font-xs);
 }
-
-
 
 
 .badge-button:before {
@@ -118,7 +113,6 @@
     z-index: 2;
 
 
-
 }
 
 .badge.new {
@@ -131,8 +125,15 @@
     color: #FFFDFD;
 }
 
+@media (max-width: 768px) {
+    .btn {
+        font-size: 14px;
+        height: 40px;
+    }
+}
+
 @media (max-width: 1300px) {
-    .btn{
+    .btn {
         padding: 0 var(--font-xs);
     }
 
